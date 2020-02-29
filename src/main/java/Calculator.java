@@ -9,6 +9,10 @@ public class Calculator {
 		d = a+b;
 		return d;
 	}
+	public void neg_test(int a, int b){
+		if((a+b)<0)
+			throw new ArithmeticException();
+	}
 	public static void main(String[] args) throws IOException {
 		int c;
 		int b;
@@ -18,9 +22,14 @@ public class Calculator {
 		a = in.nextInt();
 		if(b >0 && a>0){
 			c = add(b,a);
+			
 			System.out.print(c);
 		}
 		else
 			System.out.println("a<0 or b<0 ");
-	}
+		
+		
+		}
+	
+		
 	}

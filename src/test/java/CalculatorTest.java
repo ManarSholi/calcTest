@@ -12,4 +12,12 @@ public class CalculatorTest {
 		int act = Ob.add(2,4);
 		assertTrue(6==act);
 	}
+	
+	@Test(expected = ArithmeticException.class)
+	public void testPrintMessage() {	
+		Calculator Ob = new Calculator();
+		Ob.neg_test(5, -1);
+		System.out.println("Inside testPrintMessage()");         
+	}
+	
 }
