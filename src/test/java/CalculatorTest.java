@@ -13,11 +13,6 @@ public class CalculatorTest {
 		assertTrue(6==act);
 	}
 	
-	@Test(expected = ArithmeticException.class)
-	public void testPrintMessage() {	
-		Calculator Ob = new Calculator();
-		Ob.neg_test(-3, -1);
-		System.out.println("Inside testPrintMessage()");         
-	}
+	
 	
 }
